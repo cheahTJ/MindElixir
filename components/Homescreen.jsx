@@ -1,22 +1,12 @@
 import { View, Text, ScrollView, SafeAreaView } from 'react-native';
-import { Stack, useRouter } from 'expo-router';
 import Motivationalquote from '../components/Motivationalquote';
 import RelaxationVideos from '../components/RelaxationVideos'; 
 import Exercise from '../components/Exercise'; 
 
 const Homescreen = () => {
-  const router = useRouter();
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: '#ffffff' }}>
-      <Stack.Screen
-        options={{
-          headerShadowVisible: false,
-          headerTitle: "",
-          title:""
-        }}
-      />
-
       <ScrollView >
         <View style = {{paddingLeft: 20}}>
             <Text style={{ fontSize: 30, fontWeight: 'bold'}}>Welcome Back</Text>
@@ -28,6 +18,7 @@ const Homescreen = () => {
             <Text style={{fontSize: 18, fontWeight: 600}}> Go and have a break! </Text>
             <View style={{height:30}}></View>
             <Exercise/>
+            <View style={{height:100}}></View>
         </View>
       </ScrollView>
     </SafeAreaView>

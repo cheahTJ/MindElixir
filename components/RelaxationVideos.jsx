@@ -16,8 +16,6 @@ const RelaxationVideos = () => {
         }
     }
 
-
-
     return (
         <ScrollView horizontal={true} showsHorizontalScrollIndicator = {false} style={{marginTop: 25}}>
             <View style={styles.container}>
